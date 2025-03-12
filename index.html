@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="timeline.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/8668b16454.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <title>Abdullah Khalid</title>
     <style>
@@ -47,10 +48,10 @@
                 <div class="row">
                     <div id="buttons_center" class="col">
                         <button type="button" class="btn btn-dark me-5 mt-2" id="hi"><a
-                                style="text-decoration: none; color: white;" href="#" Download="CV.pdf">Download
-                                CV</a></button>
+                                style="text-decoration: none; color: white;" href="#" Download="CV.pdf">
+                                Resume</a></button>
                         <button type="button" class="btn btn-light me-5 mt-2"><a href="#Contact"
-                                style="text-decoration: none; color: black;">Contact Me</a></button>
+                                style="text-decoration: none; color: black;">Contact</a></button>
                     </div>
                 </div>
             </div>
@@ -60,153 +61,158 @@
 
         </div>
     </div>
-    <div class="container text-center pt-5 mt-5">
-        <h1>Sevices Offered</h1>
+    <div class="container pt-5 mt-5">
+        <h1 class="project"><strong>Projects</strong></h1>
         <div class="row pt-5 justify-content-center" id="Services">
-            <div class="col-lg col-md-6 mt-5">
-                <div class="card">
-                    <img src="Web.png" alt="">
+            <div class="col-lg-6 col-md-6 mt-5">
+                <div class="card p-3">
                     <div class="card-body">
-                        <h4 class="card-title">Web Development</h4>
-                        <p class="card-text">Designing sleek websites, enhancing user experience</p>
-                        <a href="#" class="btn btn-warning opacity-75">See Profile</a>
+                        <h4 class="card-title fw-bold"><span><i class="fa-solid fa-code me-3"></i></span>Web Development
+                        </h4>
+                        <h6 class="card-title pt-4"><strong>Login System & Weather App</strong></h6>
+                        <p class="card-text">Developed a responsive and user-friendly login system with secure
+                            authentication and strong form validation to enhance user security. Designed a dynamic
+                            weather application that fetches real-time weather data using APIs, allowing users to search
+                            for weather conditions in any city effortlessly. The project emphasizes modern UI design,
+                            API integration, and a seamless user experience across all devices.</p>
+                        <a href="#" class="btn btn-warning opacity-75">Explore More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg col-md-6 mt-5">
-                <div class="card">
-                    <img src="developer.png" alt="">
+            <div class="col-lg-6 col-md-6 mt-5">
+                <div class="card p-3">
                     <div class="card-body">
-                        <h4 class="card-title">Software Development</h4>
-                        <p class="card-text">Tailoring software, precision, and agile development</p>
-                        <a href="#" class="btn btn-warning opacity-75">See Profile</a>
+
+                        <h4 class="card-title fw-bold"><span><i class="fa-brands fa-flutter me-3"></i></span>Android
+                            Development</h4>
+                        <h6 class="card-title pt-4"><strong>PhysioGo – AI-Powered Physiotherapy Assistant</strong></h6>
+                        <p class="card-text">PhysioGo is an AI-driven physiotherapy app that helps patients perform
+                            exercises correctly using real-time pose estimation. It tracks repetitions and sets,
+                            provides instant feedback, and allows physiotherapists to assign exercises and monitor
+                            progress remotely. Built with Flutter and Python, the app integrates WebSockets for smooth
+                            live video processing, ensuring an engaging and efficient rehabilitation experience across
+                            mobile devices.</p>
+                        <a href="#" class="btn btn-warning opacity-75">Explore More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg col-md-6 mt-5">
-                <div class="card">
-                    <img src="artificial.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Unlocking AI potential for advanced insights in applications</p>
-                        <a href="#" class="btn btn-warning opacity-75">See Profile</a>
+
+        </div>
+        <div id="qualify"></div>
+        <h1 style="text-align: center; margin: 70px 0; color: #1E3A8A;"><Strong>Education</Strong></h1>
+        <div style="margin-top: 50px;" class="container">
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-time">2017 - 2019</div>
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-body">
+                        <h4>Matriculation</h4>
+                        <p>Kohinoor Grammar School</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-time">2019 - 2021</div>
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-body">
+                        <h4>FSC Pre-Engineering</h4>
+                        <p>Punjab Group of Colleges</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-time">2021 - 2025</div>
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-body">
+                        <h4>Bachelor's Degree</h4>
+                        <p>FAST National University of Computer and Emerging Sciences</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="Contact"></div>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+        <div id="contact-form" class="container">
+            <form action="/action_page.php">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-auto col-md-12">
+                            <h2 class="mb-5 ms-3" style="color: rgb(44, 128, 255);"><strong>Contact Me</strong></h2>
+                            <div class="contact-details"><a style="color: gray;" href=""><i class="fa fa-envelope"
+                                        class="contact-details" style="font-size: 20px;"></i>
+                                    <p style="display: inline;font-size: 18px;">abdullahkh.cs@gmail.com</p>
+                            </div></a>
+                            <div class="contact-details"><a style="color: gray;" href=""><i class="fa fa-phone"
+                                        class="contact-details" style="font-size: 20px;"></i>
+                                    <p style="display: inline;font-size: 18px;">03117223011</p>
+                            </div></a>
+                            <div class="contact-details"><a style="color: gray;" href=""><i class="fa fa-linkedin"
+                                        style="font-size: 20px;"></i>
+                                    <p style="display: inline; font-size: 18px;">Abdullah Khalid</p>
+                            </div></a>
+
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+
+                            <h2 style="color: rgb(44, 128, 255);"><strong >Interested to work together? Let's talk</strong> </h2>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="fname" placeholder="First Name"
+                                        name="name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="lname" placeholder="Last Name"
+                                        name="name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="email" class="form-control" id="email" placeholder="Last Name"
+                                        name="email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                        name="subject">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <textarea name="message" class="form-control" id="message" placeholder="Message"
+                                        required=""></textarea>
+                                    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </form>
+        </div>
+        <div class="row mt-5 social-icons">
+            <div class="col text-center"> <!-- Centers content -->
+                <a href=""><i class="fa fa-facebook mx-4" style="font-size: 30px; color: black;"></i></a>
+                <a href=""><i class="fa fa-instagram mx-4" style="font-size: 30px; color: black;"></i></a>
+                <a href=""><i class="fa fa-twitter mx-4" style="font-size: 30px; color: black;"></i></a>
+                <a href="https://github.com/ak-abdullah" target="_blank">
+                    <i class="fa fa-github mx-4" style="font-size: 30px; color: black;"></i>
+                </a>
             </div>
         </div>
-    </div>
-    <div id="qualify"></div>
-    <h1 style="text-align: center; margin: 70px 0;">Education and Experience</h1>
-    <div style="margin-top: 50px;" class="container">
-        <ul class="timeline">
-            <li>
-                <div class="timeline-time">2017 - 2019</div>
-                <div class="timeline-icon"></div>
-                <div class="timeline-body">
-                    <h4>Matriculation</h4>
-                    <p>Completed from Kohinoor Grammar School, fostering a solid educational foundation.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-time">2019 - 2021</div>
-                <div class="timeline-icon"></div>
-                <div class="timeline-body">
-                    <h4>FSC Pre-Engineering</h4>
-                    <p>Completed from Punjab College, showcasing academic excellence and a commitment to learning.</p>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-time">2021 - 2025</div>
-                <div class="timeline-icon"></div>
-                <div class="timeline-body">
-                    <h4>Bachelor's Degree</h4>
-                    <p>Graduated with a Bachelor's degree in Computer Science from Fast University.</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div id="Contact"></div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
-    <div id="contact-form" class="container">
-        <form action="/action_page.php">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-auto col-md-12">
-                        <h2 class="mb-5 ms-3">Contact Me</h2>
-                        <div class="contact-details"><a style="color: gray;" href=""><i class="fa fa-envelope"
-                                    class="contact-details" style="font-size: 20px;"></i>
-                                <p style="display: inline;font-size: 18px;">abdullahkh.cs@gmail.com</p>
-                        </div></a>
-                        <div class="contact-details"><a style="color: gray;" href=""><i class="fa fa-phone"
-                                    class="contact-details" style="font-size: 20px;"></i>
-                                <p style="display: inline;font-size: 18px;">03117223011</p>
-                        </div></a>
-                        <div class="contact-details"><a style="color: gray;" href=""><i class="fa fa-linkedin"
-                                    style="font-size: 20px;"></i>
-                                <p style="display: inline; font-size: 18px;">Abdullah Khalid</p>
-                        </div></a>
 
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <h2>Interested to work together? Let's talk</h2>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" id="fname" placeholder="First Name" name="name">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" id="lname" placeholder="Last Name" name="name">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <input type="email" class="form-control" id="email" placeholder="Last Name"
-                                    name="email">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject"
-                                    name="subject">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <textarea name="message" class="form-control" id="message" placeholder="Message"
-                                    required=""></textarea>
-                                <button type="submit" class="btn btn-primary mt-4">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="row mt-5 social-icons">
-        <div class="col text-center"> <!-- Centers content -->
-            <a href=""><i class="fa fa-facebook mx-4" style="font-size: 30px; color: black;"></i></a>
-            <a href=""><i class="fa fa-instagram mx-4" style="font-size: 30px; color: black;"></i></a>
-            <a href=""><i class="fa fa-twitter mx-4" style="font-size: 30px; color: black;"></i></a>
-            <a href="https://github.com/ak-abdullah" target="_blank">
-                <i class="fa fa-github mx-4" style="font-size: 30px; color: black;"></i>
-            </a>
-        </div>
-    </div>
-
-    <footer class="bg-dark mt-3">
-        <p class="text-center">Copyright &#169; Abdullah. All rights reserved</p>
-        <p class="text-center">Designed by Abdullah Sheikh</p>
-    </footer>
-    <script>
-        document.addEventListener("scroll", function () {
-            let elements = document.querySelectorAll(".timeline > li");
-            elements.forEach(el => {
-                if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-                    el.classList.add("visible");
-                }
+        <footer class="bg-dark mt-3">
+            <p class="text-center">Copyright &#169; Abdullah. All rights reserved</p>
+            <p class="text-center">Designed by Abdullah Sheikh</p>
+        </footer>
+        <script>
+            document.addEventListener("scroll", function () {
+                let elements = document.querySelectorAll(".timeline > li");
+                elements.forEach(el => {
+                    if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+                        el.classList.add("visible");
+                    }
+                });
             });
-        });
 
-    </script>
+        </script>
 </body>
 
 </html>

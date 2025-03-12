@@ -147,7 +147,7 @@ p {
 }
 
 .navbar-nav a {
-    color: whitesmoke;
+    color: white;
 }
 
 .btn.btn-light {
@@ -155,10 +155,19 @@ p {
 }
 
 .card {
+
+    transition: all 0.3s ease-in-out;
+    background-color: #222;
     border-radius: 10px;
-    height: 500px;
+
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
+.card:hover {
+    box-shadow: 20px 20px 20px rgba(11, 11, 11, 0.3); /* Stronger shadow */
+    transform: scale(1.05); /* Slight zoom */
+    background-color: #222; /* Darker background */
+}
 .card img {
     height: 300px;
     width: 100%;
@@ -238,3 +247,40 @@ a {
     transform: scale(1.2); /* Slight zoom effect */
     text-shadow: 0px 0px 8px rgba(0, 123, 255, 0.6); /* Soft glow */
 }
+
+.card-text {
+    color: white;
+    
+    font-size: 16px;
+}
+
+.project {
+    text-align: center;
+ color: #ffc107;   
+}
+.fa-solid, .fa-brands{
+    
+ font-size: 30px ;
+ color: #ffc107;
+}
+
+h6.card-title {
+    
+    color: #ffc107;
+
+}
+.card-title {
+    color: white;
+
+}
+
+.form-control {
+    border-width: 2px;
+
+}
+
+.btn-warning {
+    
+    color: white ;
+    text-decoration: none;
+} 

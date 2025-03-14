@@ -18,12 +18,8 @@
 
 
 @media screen and (max-width: 994px) {
-    form .container div.contact-details p {
-        display: none !important;
-    }
+    
 
-    .container-fluid .rounded {
-    }
     .col-lg-6.col-auto.col-md-12,
     #buttons_center {
         margin-top: 20px;
@@ -40,7 +36,7 @@
         padding: 0 20px;
     }
 
-    form .container h2.mb-5.ms-3 {
+    form .container h2 {
         margin: 0 !important;
         padding: 10px;
         text-align: center;
@@ -102,10 +98,14 @@
 }
 
 
-body {
+html, body {
     font-family: 'Montserrat';
     color: gray;
     background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
 }
 
   
@@ -205,6 +205,17 @@ a {
 
 .hamburger i {
     height: 40px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hamburger i:hover {
+    color: #f39c12; /* Change color on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+.hamburger i:active {
+    transform: rotate(90deg); /* Rotate when clicked */
 }
 
 .shown {
@@ -265,10 +276,12 @@ a {
 }
 
 .project {
-    text-align: center;
+text-align: center;
  color: black;   
  position: relative;
  padding-bottom: 6px;
+ display: inline-block;
+ 
 }
 
 
@@ -295,8 +308,9 @@ h6.card-title {
 }
 
 .btn-warning {
-    
-    color: white ;
+
+    background-color: #ffc107;
+    color: white;
     text-decoration: none;
 } 
 
@@ -307,7 +321,7 @@ h6.card-title {
 .skill-section {
     text-align: center;
 }
-.skill-section h1{
+.skill-section h1, #qualify h1, .contact-me, .interested{
     text-align: center;
     color: black;
     display: inline-block;
@@ -316,21 +330,19 @@ h6.card-title {
 
 }
 
-.project::after, .skill-section h1::after {
+.project::after, .skill-section h1::after, #qualify h1::after, .contact-me::after, .interested::after {
     content: "";
     position: absolute;
     left: 50%;
     bottom: -12%;
-    width: 110%; /* Adjust width to make underline shorter */
+    width: 100%; /* Adjust width to make underline shorter */
     height: 6px; /* Thickness of the underline */
     background-color: #ffc107; /* Change color */
     border-radius: 50px; /* More rounded effect */
     transform: translateX(-50%); /* Centers the underline */
 }
 
-.project::after {
-    width: 15%;
-}
+
 .skill img {
     padding: 20px 60px;
     width: 220px;
@@ -343,6 +355,29 @@ h6.card-title {
     height: auto;
     width: 20%;
     border-radius: 10px;
-
-    
 }
+
+.timeline img {
+    max-width: 100%;
+    min-width: 30px;
+    height: auto;
+    /* border-radius: 50%; */
+}
+
+.punjab
+{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.contact-details {
+    padding: 10px;
+}
+.contact-details i {
+    color: black;
+    border-radius: 50%;
+    background-color: #ffc107;
+    padding: 10px;
+    margin: 0;
+}
+

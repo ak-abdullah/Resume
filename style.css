@@ -286,9 +286,9 @@ text-align: center;
 
 
 
-.fa-solid, .fa-brands{
+.card-title i, .material-symbols-outlined{
     
- font-size: 30px ;
+ font-size: 30px !important;
  color: #ffc107;
 }
 

@@ -60,7 +60,7 @@
                 <div class="row">
                     <div id="buttons_center col-6" class="col">
                         <button type="button" class="btn btn-dark me-4 mt-2 ">
-                            <a style="text-decoration: none; color: white;" href="#" download="CV.pdf">Resume</a>
+                            <a style="text-decoration: none; color: white;" href="CV.pdf" target="_blank" >Resume</a>
                         </button>
                         <button type="button col-6" class="btn btn-light mt-2">
                             <a href="#Contact" style="text-decoration: none; color: black;">Contact</a>
@@ -255,10 +255,10 @@
     <div id="Contact" ></div>
     
     <div id="contact-form" class="container m-md-5 pt-md-5 m-0 pt-0">
-        <form action="/action_page.php">
+        <form autocomplete="off">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 d-sm-block d-none">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-12 d-none">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-12 text-md-start text-center">
                                 <h2 class="text-center contact-me"><strong>Contact Me</strong></h2>
@@ -266,23 +266,22 @@
                         </div>
                         <div class="row mt-md-4">
                             <div class="col-md-12 col-4">
-                                <div class="contact-details p-2"><a style="color: gray;" href=""><i
+                                <div class="contact-details p-2"><a style="color: gray;"><i
                                             class="fa fa-envelope me-2" class="contact-details"
                                             style="font-size: 20px;"></i>
-                                        <p style="display: inline;font-size: 18px;" class="text-muted ">
-                                            abdullahkh.cs@gmail.com</p>
+                                        <p style="display: inline;font-size: 18px;" class="text-muted ">email</p>
                                 </div></a>
                             </div>
                             <div class="col-md-12 col-4">
-                                <div class="contact-details p-2"><a style="color: gray;" href=""><i class="fa fa-phone me-2"
+                                <div class="contact-details p-2"><a style="color: gray;"><i class="fa fa-phone me-2"
                                             class="contact-details" style="font-size: 20px;"></i>
-                                        <p style="display: inline;font-size: 18px;" class="text-muted">+92 3117223011</p>
+                                        <p style="display: inline;font-size: 18px;" class="text-muted"></p>
                                 </div></a>
                             </div>
                             <div class="col-md-12 col-4">
-                                <div class="contact-details p-2"><a style="color: gray;" href=""><i
+                                <div class="contact-details p-2"><a style="color: gray;"><i
                                             class="fa fa-linkedin me-2" style="font-size: 20px;"></i>
-                                        <p style="display: inline; font-size: 18px;" class="text-muted">Abdullah Khalid
+                                        <p style="display: inline; font-size: 18px;" class="text-muted">
                                         </p>
                                 </div></a>
                             </div>
@@ -296,16 +295,16 @@
                         <h2 class="interested"><strong>Interested to work together?</strong> </h2>
                         <div class="row">
                             <div class="col">
-                                <input type="text" class="form-control" id="fname" placeholder="First Name" name="name">
+                                <input type="text" class="form-control" id="fname" placeholder="First Name" name="name" required>
                             </div>
                             <div class="col">
-                                <input type="text" class="form-control" id="lname" placeholder="Last Name" name="name">
+                                <input type="text" class="form-control" id="lname" placeholder="Last Name" name="name" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="email" class="form-control" id="email" placeholder="Last Name"
-                                    name="email">
+                                <input type="email" class="form-control" id="email" placeholder="Email"
+                                    name="email" required>
                             </div>
                         </div>
                         <div class="row">
@@ -332,7 +331,8 @@
     </div>
     <div class="row mt-5 social-icons">
         <div class="col text-center"> <!-- Centers content -->
-            <a href=""><i class="fa fa-facebook mx-4" style="font-size: 30px; color: black;"></i></a>
+            <a href="https://www.linkedin.com/in/-abdullah-khalid"><i class="fa-brands fa-linkedin-in mx-4" style="font-size: 30px; color: black;"></i></a>
+            <!-- <a href=""><i class="fa fa-facebook mx-4" style="font-size: 30px; color: black;"></i></a> -->
             <a href=""><i class="fa fa-instagram mx-4" style="font-size: 30px; color: black;"></i></a>
             <a href=""><i class="fa fa-twitter mx-4" style="font-size: 30px; color: black;"></i></a>
             <a href="https://github.com/ak-abdullah" target="_blank">

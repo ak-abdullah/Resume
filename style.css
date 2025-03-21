@@ -204,7 +204,7 @@ a {
 }
 
 .hamburger i {
-    height: 40px;
+    
     color: white;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -352,9 +352,8 @@ h6.card-title {
 
 #buttons_center button{
     min-width: 100px;
-    height: auto;
+    height: 50px;
     width: 20%;
-    border-radius: 10px;
 }
 
 .timeline img {

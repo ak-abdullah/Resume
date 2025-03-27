@@ -52,16 +52,16 @@
 
 <body>
 
-    <div class="container-fluid bg-dark ">
+    <div class="container-fluid bg-dark">
 
         <div class="hamburger d-flex justify-content-end d-none flex justify-content-between align-items-center">
             <p class="logo_name mb-0">Abdullah.</p>
             <i class="fa fa-bars me-3" style="font-size: 30px; cursor: pointer;  margin: 20px 0;"></i>
         </div>
         <nav class="navbar navbar-expand-sm bg-dark">
-            <div class="container-fluid d-flex align-items-center">
-                <p class="logo_name mb-0">Abdullah.</p>
-                <ul class="navbar-nav fw-bold text-center ms-auto">
+            <div class="container-fluid d-flex justify-content-center">
+                <p class="logo_name mb-0 d-none d-md-block">Abdullah.</p>
+                <ul class="navbar-nav fw-bold text-center ms-md-auto">
                     <li class="nav-item"><a href="#home" class="nav-link px-3">Home</a></li>
                     <li class="nav-item"><a href="#qualify" class="nav-link px-3">Qualification</a></li>
                     <li class="nav-item"><a href="#Services" class="nav-link px-3">Projects</a></li>
@@ -96,12 +96,12 @@
                 <!-- Buttons -->
                 <div class="row">
                     <div id="buttons_center col-6" class="col">
-                        <button type="button" class="btn btn-dark me-4 mt-2 rounded-pill"
+                        <button type="button" class="btn btn-dark mt-2 rounded-pill mx-3"
                             style="--bs-btn-padding-y: .6rem; --bs-btn-padding-x: .9rem;">
                             <a class="p-3 fw-bold" style="text-decoration: none; color: white;" href="CV.pdf"
                                 target="_blank">Resume</a>
                         </button>
-                        <button type="button col-6" class="btn btn-light me-4 mt-2 rounded-pill"
+                        <button type="button col-6" class="btn btn-light mt-2 rounded-pill"
                             style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: .9rem;">
                             <a class="p-3 fw-bold" href="#Contact"
                                 style="text-decoration: none; color: black;">Contact</a>
@@ -440,18 +440,18 @@
             });
         });
         var i = 0;
-        var sentences = ['I am a Mobile Developer!', 'I am a Web Developer!', 'I am a Data Scientist!'];
+        var sentences = ['I am Mobile Developer!', 'I am Web Developer!', 'I am Data Scientist!'];
         var sentenceIndex = 0;
         var speed = 50;
         var isDeleting = false;
 
         var i = 0;
-        var sentences = ['I am a Mobile Developer!', 'I am a Web Developer!', 'I am a Data Scientist!'];
+        var sentences = ['I am Mobile Developer!', 'I am Web Developer!', 'I am Data Scientist!'];
         var sentenceIndex = 0;
         var speed = 50;
         var isDeleting = false;
 
-        window.onload = function () {
+        function typing() {
             var element = document.getElementById("typing");
 
             function typeWriter() {
@@ -484,7 +484,7 @@
 
             typeWriter(); // Start the effect
         };
-
+        typing()
 
     </script>
 </body>
